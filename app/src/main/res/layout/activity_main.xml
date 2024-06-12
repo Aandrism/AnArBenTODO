@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+<!--    https://developer.android.com/develop/ui/views/layout/declaring-layout-->
+
+    <TextView
+        android:id="@+id/mainTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="ArAnBen TODO Application"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sectionRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonAddNewSection"
+        android:layout_below="@id/mainTitleText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        />
+<!--    https://developer.android.com/develop/ui/views/layout/recyclerview-->
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAddNewSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button_green"
+        android:drawableLeft="@drawable/ic_add_white"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="Add new section"
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
+        />
+
+<!--    https://stackoverflow.com/questions/31858374/android-button-background-color-not-changing-->
+
+</RelativeLayout>
